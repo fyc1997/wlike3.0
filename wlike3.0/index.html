@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>wlike3.0</title>
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/scroll.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body {
+	font-family:"苹方","冬青黑体简体中文","华文细黑","微软雅黑","幼圆","宋体";
+	font-size:14px;
+	margin:0px;
+	background:#f6f6f6;
+}
+</style>
+</head>
+<script>
+	window.onload=function(){gainWidth();gainHeight();}
+	window.onresize=function(){gainWidth();gainHeight();}
+	window.onscroll=function(){blurCommand();}
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/with.js"></script>
+<script src="js/index.js"></script>
+<body> 
+	<div id="side_navi" oncontextmenu="return false" onselectstart="return false">
+    	<div class="navi_myInfo">
+        	<img class="myHead" src="images/1.jpeg"/>
+            <div class="myName">你爱吃大白菜</div>
+            <!--<img class="localIcon" src="images/local.png"/>
+            <div class="myLocal">浙江省-嘉兴市</div>-->
+        </div>
+        <table class="navi_myFriend" border="0" cellpadding="0" cellspacing="0" align="center">
+            <tr>
+                <td class="my_friend">113
+                    <div class="my_friend_char">好友</div></td>
+                <td class="my_friend middle">245
+                    <div class="my_friend_char">粉丝</div></td>
+            </tr>
+        </table>
+        <div id="navi_index" onmouseover="IconChangeColor(this)" onmouseout="IconChange(this)">
+        	<img class="navi_icon" src="images/index.png"/>
+            <div class="navi_select">首页</div>
+        </div>
+        <div id="navi_special" onmouseover="IconChangeColor(this)" onmouseout="IconChange(this)">
+            <img class="navi_icon" src="images/special.png"/>
+            <div class="navi_select">兴趣圈精选</div>
+        </div>
+        <div id="navi_hot" onmouseover="IconChangeColor(this)" onmouseout="IconChange(this)">
+            <img class="navi_icon" src="images/hot.png"/>
+            <div class="navi_select">热门动态</div>
+        </div>
+        <div id="navi_warehouse" onmouseover="IconChangeColor(this)" onmouseout="IconChange(this)">
+        	<img class="navi_icon" src="images/warehouse.png"/>
+            <div class="navi_select">我的库</div>
+        </div>
+        <div id="navi_club" onmouseover="IconChangeColor(this)" onmouseout="IconChange(this)">
+        	<img class="navi_icon" src="images/club.png"/>
+            <div class="navi_select">兴趣圈</div>
+        </div>
+        <div id="navi_user" onmouseover="IconChangeColor(this)" onmouseout="IconChange(this)">
+        	<img class="navi_icon" src="images/user.png"/>
+            <div class="navi_select">用户</div>
+        </div>
+    </div>
+    <div id="side_top" oncontextmenu="return false" onselectstart="return false">
+    	<div class="logo"><img src=""/></div>
+        <div class="top_create"><img id="createSet" src="images/set.png"/></div>
+        <div class="top_create"><img id="createLetter" src="images/letter.png"/></div>
+        <div class="top_create"><img id="createShare" src="images/share.png"/></div>
+        <div class="top_create"><img id="createClub" src="images/create.png"/></div>
+        <div id="search">
+            <input type="text" placeholder="" name="topSearch" id="topSearch"></input>
+            <button type="submit" />
+        </div>
+    </div>
+    <div id="side_main">
+        <div id="side_main_left">
+        	<div id="main_command">
+            	<img class="command_club" src="images/bg2.jpg"/>
+                <div class="command_info">
+                	<div class="command_name">#绘画大世界</div>
+                	<div class="command_num">5838人已加入</div>
+                </div>
+            </div>
+            <div id="main_navi" oncontextmenu="return false" onselectstart="return false">
+            	<div class="main_navi_select" id="">全部</div>
+                <div class="main_navi_select" id="">图片</div>
+                <div class="main_navi_select" id="">视频</div>
+                <div class="main_navi_select" id="">我的好友</div>
+                <div class="main_navi_select" id="">我的关注</div>
+                <div class="main_navi_select" id="">圈里的人</div>
+                <div class="main_navi_select" id="">来自圈子</div>
+            </div>
+            <div id="main_content">
+                <div id="main_pillar"></div>
+                <!--1-->
+                <div class="main_share">
+                    <div class="share_user_head"><img class="main_userHead" src="images/1.jpeg"/></div>
+                    <div class="share_user_name">你爱吃大白菜</div>
+                    <div class="share_hyphen"></div>
+                    <div class="share_time">12月14日 14:12<span>发布于个人</span></div>
+                        <div class="share_content">
+                            <div class="share_main_left2">
+                                <div class="content_char">【朴树唱送别泣不成声 网友：人到中年却还活得像个少年 一定很不容易吧】<br/>朴树在《大事发声》上翻唱李叔同的经典《送别》。这不是一个完整的表演，因为他唱到一半情难自已，泣不成声。他曾说此生若能写出这样的歌那死而无憾。这首歌会让你想起什么呢？</div>
+                                <div class="content_pic">
+                                    
+                                </div>
+                            </div>
+                            <div class="share_main_right2" oncontextmenu="return false" onselectstart="return false">
+                                <div class="content_select2">
+                                    <div class="contentSelect2">
+                                        <div class="select_num1" onmouseover="IconChangeColor(this)" onmouseout="IconChange(this)"><img class="select_icon" src="images/point.png"/>342</div>
+                                    </div>
+                                    <div class="contentSelect2">
+                                        <div class="select_num2" onmouseover="IconChangeColor(this)" onmouseout="IconChange(this)"><img class="select_icon" src="images/content.png"/>1.5万</div>
+                                    </div>
+                                    <div class="contentSelect2">
+                                        <div class="select_num3" onmouseover="IconChangeColor(this)" onmouseout="IconChange(this)"><img class="select_icon" src="images/repost.png"/>5161</div>
+                                    </div>
+                                    <div class="contentSelect2">
+                                        <div class="select_num4" onmouseover="IconChangeColor(this)" onmouseout="IconChange(this)"><img class="select_icon" src="images/keep.png"/>收藏</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!--2-->
+                <div class="main_share">
+                    <div class="share_user_head"><img class="main_userHead" src="images/1.jpeg"/></div>
+                    <div class="share_user_name">你爱吃大白菜</div>
+                    <div class="share_hyphen"></div>
+                    <div class="share_time">12月14日 14:12<span>发布于<span>#朴树比李钟硕帅</span></span></div>
+                        <div class="share_content">
+                            <div class="share_main_left">
+                                <div class="content_char">【朴树唱送别泣不成声 网友：人到中年却还活得像个少年 一定很不容易吧】<br/>朴树在《大事发声》上翻唱李叔同的经典《送别》。这不是一个完整的表演，因为他唱到一半情难自已，泣不成声。他曾说此生若能写出这样的歌那死而无憾。这首歌会让你想起什么呢？#男朋友宠你能宠到什么程度# </div>
+                                <div class="content_pic">
+                                    <img class="contentPic" src="images/2.jpeg"/>
+                                    <img class="contentPic" src="images/2.jpeg"/>
+                                    <img class="contentPic" src="images/2.jpeg"/>
+                                    <img class="contentPic" src="images/2.jpeg"/>
+                                   
+                                </div>
+                            </div>
+                            <div class="share_main_right" oncontextmenu="return false" onselectstart="return false">
+                                <div class="content_select">
+                                    <div class="contentSelect">
+                                        <div class="select_num1" onmouseover="IconChangeColor(this)" onmouseout="IconChange(this)"><img class="select_icon" src="images/point.png"/>342</div>
+                                    </div>
+                                    <div class="contentSelect">
+                                        <div class="select_num2" onmouseover="IconChangeColor(this)" onmouseout="IconChange(this)"><img class="select_icon" src="images/content.png"/>1.5万</div>
+                                    </div>
+                                    <div class="contentSelect">
+                                        <div class="select_num3" onmouseover="IconChangeColor(this)" onmouseout="IconChange(this)"><img class="select_icon" src="images/repost.png"/>5161</div>
+                                    </div>
+                                    <div class="contentSelect">
+                                        <div class="select_num4" onmouseover="IconChangeColor(this)" onmouseout="IconChange(this)"><img class="select_icon" src="images/keep.png"/>收藏</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!--3-->
+                <div class="main_share">
+                    <div class="share_user_head"><img class="main_userHead" src="images/1.jpeg"/></div>
+                    <div class="share_user_name">你爱吃大白菜</div>
+                    <div class="share_hyphen"></div>
+                    <div class="share_time">12月14日 14:12<span>发布于<span>#朴树比李钟硕帅</span></span></div>
+                        <div class="share_content">
+                            <div class="share_main_left">
+                                <div class="content_char">【朴树唱送别泣不成声 网友：人到中年却还活得像个少年 一定很不容易吧】<br/>朴树在《大事发声》上翻唱李叔同的经典《送别》。这不是一个完整的表演，因为他唱到一半情难自已，泣不成声。他曾说此生若能写出这样的歌那死而无憾。这首歌会让你想起什么呢？#男朋友宠你能宠到什么程度# </div>
+                                <div class="content_pic">
+                                    <img class="contentPic" src="images/2.jpeg"/>
+                                    <img class="contentPic" src="images/2.jpeg"/>
+                                    <img class="contentPic" src="images/2.jpeg"/>
+                                    <img class="contentPic" src="images/2.jpeg"/>
+                                   
+                                </div>
+                            </div>
+                            <div class="share_main_right" oncontextmenu="return false" onselectstart="return false">
+                                <div class="content_select">
+                                    <div class="contentSelect">
+                                        <div class="select_num1" onmouseover="IconChangeColor(this)" onmouseout="IconChange(this)"><img class="select_icon" src="images/point.png"/>342</div>
+                                    </div>
+                                    <div class="contentSelect">
+                                        <div class="select_num2" onmouseover="IconChangeColor(this)" onmouseout="IconChange(this)"><img class="select_icon" src="images/content.png"/>1.5万</div>
+                                    </div>
+                                    <div class="contentSelect">
+                                        <div class="select_num3" onmouseover="IconChangeColor(this)" onmouseout="IconChange(this)"><img class="select_icon" src="images/repost.png"/>5161</div>
+                                    </div>
+                                    <div class="contentSelect">
+                                        <div class="select_num4" onmouseover="IconChangeColor(this)" onmouseout="IconChange(this)"><img class="select_icon" src="images/keep.png"/>收藏</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!--4-->
+                <div class="main_share">
+                    <div class="share_user_head"><img class="main_userHead" src="images/1.jpeg"/></div>
+                    <div class="share_user_name">你爱吃大白菜</div>
+                    <div class="share_hyphen"></div>
+                    <div class="share_time">12月14日 14:12<span>发布于个人</span></div>
+                        <div class="share_content">
+                            <div class="share_main_left2">
+                                <div class="content_char">【朴树唱送别泣不成声 网友：人到中年却还活得像个少年 一定很不容易吧】<br/>朴树在《大事发声》上翻唱李叔同的经典《送别》。这不是一个完整的表演，因为他唱到一半情难自已，泣不成声。他曾说此生若能写出这样的歌那死而无憾。这首歌会让你想起什么呢？</div>
+                                <div class="content_pic">
+                                    
+                                </div>
+                            </div>
+                            <div class="share_main_right2" oncontextmenu="return false" onselectstart="return false">
+                                <div class="content_select2">
+                                    <div class="contentSelect2">
+                                        <div class="select_num1" onmouseover="IconChangeColor(this)" onmouseout="IconChange(this)"><img class="select_icon" src="images/point.png"/>342</div>
+                                    </div>
+                                    <div class="contentSelect2">
+                                        <div class="select_num2" onmouseover="IconChangeColor(this)" onmouseout="IconChange(this)"><img class="select_icon" src="images/content.png"/>1.5万</div>
+                                    </div>
+                                    <div class="contentSelect2">
+                                        <div class="select_num3" onmouseover="IconChangeColor(this)" onmouseout="IconChange(this)"><img class="select_icon" src="images/repost.png"/>5161</div>
+                                    </div>
+                                    <div class="contentSelect2">
+                                        <div class="select_num4" onmouseover="IconChangeColor(this)" onmouseout="IconChange(this)"><img class="select_icon" src="images/keep.png"/>收藏</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div id="side_main_right">
+        	<div class="right_info">
+            	<div class="right_comment_title">相关动态
+                    <div class="right_comment_set">
+                    	<img src="images/downSelect.png"/>
+                        <img src="images/setSelect.png"/>
+                    	<img src="images/closeSelect.png"/>
+                        
+                    </div>
+                </div>
+                <div class="right_comment_list">
+                	<div class="right_comment_top">
+                		<img class="right_comment_head" src="images/1.jpeg"/>
+                    	<div class="right_comment_name">17可爱的小帅哥</div>
+                    	<div class="right_comment_time">12-26 14:59</div>
+                    	<div class="right_comment_admire"><img src="images/like.png"/>点了赞</div>
+                    </div>
+                    <div class="right_comment_main">
+                    	<img class="comment_main_pic" src="images/1.jpeg"/>
+                        <div class="comment_main_content">
+                        	<div class="comment_content_char"><div class="comment_content_name">18可爱的大美妞</div>：hello,world!啊啊啊啊，恩恩恩，啊哼啊哼啊哼，啊啊啊啊，恩恩恩，啊哼啊哼啊，啊啊啊啊，恩恩恩，啊哼啊哼啊</div>
+                        </div>
+                    </div>
+                </div>   
+                      
+                <div class="right_comment_list">
+                	<div class="right_comment_top">
+                        <img class="right_comment_head" src="images/1.jpeg"/>
+                        <div class="right_comment_name">17可爱的小帅哥</div>
+                        <div class="right_comment_time">12-26 14:59</div>
+                        <div class="right_comment_admire"><img src="images/comment.png"/>新评论</div>
+                        <div id="right_comment_feedback">回复</div>
+                    </div>
+                    <div class="right_comment_new">原来有一天，所有拥有的都会失去，因为没有什么是永恒的！为什么！来得如此之快！</div>
+                    <div class="right_comment_main">
+                    	<img class="comment_main_pic" src="images/1.jpeg"/>
+                        <div class="comment_main_content">
+                        	<div class="comment_content_char"><div class="comment_content_name">18可爱的大美妞</div>：hello,world!啊啊啊啊<br/>恩恩恩，啊哼啊哼啊哼，啊啊啊啊，恩恩恩，啊哼啊哼啊，啊啊啊啊，恩恩恩，啊哼啊哼啊</div>
+                        </div>
+                    </div>
+                </div>     
+                
+                <div class="right_comment_list">
+                    <div class="right_comment_top">
+                        <img class="right_comment_head" src="images/1.jpeg"/>
+                        <div class="right_comment_name">17可爱的小帅哥</div>
+                        <div class="right_comment_time">12-26 14:59</div>
+                        <div class="right_comment_admire"><img src="images/comment.png"/>新评论</div>
+                        <div id="right_comment_feedback">回复</div>
+                    </div>
+                    <div class="right_comment_new">原来有一天，所有拥有的都会失去，因为没有什么是永恒的！为什么！来得如此之快！</div>
+                    <div class="right_comment_main">
+                    	
+                        <div class="comment_main_content">
+                        	<div class="comment_content_char"><div class="comment_content_name">18可爱的大美妞</div>：hello,world!啊啊啊啊,恩恩恩，啊<br/>哼啊哼啊哼，啊啊啊啊，恩恩恩，啊哼啊哼啊，啊啊啊啊，恩恩恩，啊哼啊哼啊</div>
+                        </div>
+                    </div>
+                </div>     
+                
+                <div class="right_comment_list">
+                	<div class="right_comment_top">
+                        <img class="right_comment_head" src="images/1.jpeg"/>
+                        <div class="right_comment_name">17可爱的小帅哥</div>
+                        <div class="right_comment_time">12-26 14:59</div>
+                        <div class="right_comment_admire"><img src="images/comment.png"/>新评论</div>
+                        <div id="right_comment_feedback">回复</div>
+                    </div>
+                    <div class="right_comment_new">原来有一天，所有拥有的都会失去，因为没有什么是永恒的！为什么！来得如此之快！</div>  
+                    <div class="right_comment_main">
+                    	<img class="comment_main_pic" src="images/1.jpeg"/>
+                        <div class="comment_main_content">
+                        	<div class="comment_content_char"><div class="comment_content_name">18可爱的大美妞</div>：hello,world!啊啊啊啊，<br/>恩恩恩，啊哼啊哼啊哼，啊啊啊啊，恩恩恩，啊哼啊哼啊，啊啊啊啊，恩恩恩，啊哼啊哼啊</div>
+                        </div>
+                    </div>
+                </div>     
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

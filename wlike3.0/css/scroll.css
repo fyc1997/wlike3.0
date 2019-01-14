@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+#side_main_right::-webkit-scrollbar-track
+{
+	width:6px;
+	border:none;
+	outline:none;
+}
+#side_main_right::-webkit-scrollbar
+{
+	width:6px;
+	border:none;
+	outline:none;
+}
+
+#side_main_right::-webkit-scrollbar-thumb
+{
+	height:10px;
+	background-color:rgba(115,135,180,1);
+}
